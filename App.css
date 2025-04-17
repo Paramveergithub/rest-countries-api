@@ -130,7 +130,7 @@ main .container {
   background-color: var(--elements-color);
   max-width: 300px;
   min-width: 250px;
-  height: 350px;
+  height: 400px;
 }
 
 .image{
