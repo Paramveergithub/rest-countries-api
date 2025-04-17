@@ -1,0 +1,28 @@
+main{
+  --shimmer-color: hsl(0, 0%, 78%);
+}
+
+main.dark-mode{
+  --shimmer-color: hsl(208, 21%, 34%);
+}
+
+.image-shimmer-card{
+  height: 350px !important;
+  width: 50%;
+  background-color: var(--shimmer-color);
+}
+.country-details{
+  width: 50%;
+}
+.country-shimmer-card{
+ height: 50px;
+ width: 100%;
+ margin-top: 10px;
+ background-color: var(--shimmer-color);
+}
+.shimmer-Title{
+  height: 50px;
+  width: 100%;
+  margin-top: 10px;
+  background-color: var(--shimmer-color);
+}

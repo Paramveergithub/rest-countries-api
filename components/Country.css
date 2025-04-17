@@ -1,0 +1,127 @@
+*{
+  box-sizing: border-box;
+}
+
+.country-page-container{
+  width: 100vw;
+  margin: 0;
+}
+.back-btn-container{
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.back-btn{
+  text-decoration: none;
+  color: inherit;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 1.7rem 0rem;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.25);
+}
+
+.country-container{
+  max-width: 1200px;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
+}
+
+.country-container .country-flag{
+  width: 40%;
+  height: auto;
+}
+
+.country-container .country-flag img{
+  width: 100%;
+  height: auto;
+}
+
+.country-container .country-details{
+  width: 60%;
+}
+
+.country-container .country-details .coverCol{
+  display: flex;
+  gap: 5rem;
+}
+
+.country-container .border-col{
+  display: flex;
+  gap: 1rem;
+}
+
+.country-container .border-col p{
+  margin: 0rem;
+  white-space: nowrap;
+}
+
+p b{
+  font-size: larger;
+}
+
+.country-container .border-countries{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.country-container .border-countries a{
+  text-decoration: none;
+  color: inherit;
+  padding: 4px 4px; 
+  box-shadow: 0px 4px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.country-container .border-countries a:hover{
+  box-shadow: 0px 8px 8px 1px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.3s ease;
+  border-radius: 4px;
+}
+
+
+@media(max-width: 768px){
+  .country-page-container .country-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .country-container .country-flag{
+    width: 80%;
+    height: auto;
+  }
+  .country-container .country-details{
+    width: 100%;
+  }
+  .country-container .border-col{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+} 
+
+@media(max-width: 568px){
+  .back-btn{
+    margin-top: 0;
+    padding-top: 0;
+  }
+  .country-page-container{
+    padding: 3rem 1rem;
+  }
+  .country-page-container .country-container{
+    padding: 0;
+  }
+  .country-container .country-details .coverCol{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+}
